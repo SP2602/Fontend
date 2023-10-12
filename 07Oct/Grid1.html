@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: rgb(88, 83, 83);
+        }
+        .container{
+            height: 100vh;
+            background-color: yellow;
+            display:grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            /* grid-template-columns: repeat(4, 1fr); For making responsive*/
+            grid-template-rows: 100px 100px 100px;
+            /* grid-template-rows: repeat(3,1fr); For making responsive*/
+            row-gap: 10px;
+            column-gap: 20px;
+            justify-content: center;
+            /* align-items: center;
+            align-content: space-evenly; */
+        }
+        .item{
+            border:1px solid #ccc;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>
+
+<!-- Due to grid we are able to make it responsive both ways i.e vertically and horizontally.
+Grid is two directional while flex is one directional. -->
